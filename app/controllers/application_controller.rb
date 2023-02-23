@@ -16,5 +16,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-
+  def home
+    render({ :template => "layouts/home.html.erb" })
+  end
 end
